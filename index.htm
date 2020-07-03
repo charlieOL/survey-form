@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Customer Satisfaction Survey</h1>
+      <p id="description">Please tell us about your shopping experience in our store. Answering will take just a moment</p>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <div class="data-input">
+          <label id="name-label" for="name">Customer name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <label for="gender">Gender<span class="clue">(optional)</span></label>
+          <input type="text" name="gender" id="gender" placeholder="Gender">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+          <label for="city">Store location</label>
+          <input type="text" name="city" id="city" placeholder="City" required>
+        </div>
+    
+        <div class="radio-input">
+          <p>How satisfied are you with the customer service you received at the store?</p>
+          <label><input type="radio" name="user-satisfaction" value="very-satisfied">Very Satisfied</label>
+          <label><input type="radio" name="user-satisfaction" value="satisfied">Satisfied</label>
+          <label><input type="radio" name="user-satisfaction" value="neutral">Neutral</label>
+          <label><input type="radio" name="user-satisfaction" value="dissatisfied">Dissatisfied</label>
+          <label><input type="radio" name="user-satisfaction" value="very-dissatisfied">Very Dissatisfied</label>
+        </div>
+    
+        <div class="checkbox-input">
+          <p>Which department of the store did you visit? <span class="clue">(Check all that apply)</span></p>
+          <label><input type="checkbox" name="store-section" value="ladieswear" />Ladieswear</label>
+          <label><input type="checkbox" name="store-section" value="menswear" />Menswear</label>
+          <label><input type="checkbox" name="store-section" value="kids" />Kids</label>
+          <label><input type="checkbox" name="store-section" value="shoes-accessories" />Shoes & Accessories</label>
+          <label><input type="checkbox" name="store-section" value="underwear-lingerie" />Underwear & Lingerie</label>
+          <label><input type="checkbox" name="store-section" value="baby" />Baby</label>
+          <label><input type="checkbox" name="store-section" value="maternity" />Maternity Wear</label>
+        </div>
+    
+        <div class="dropdown">
+          <p>What do you like most about the store?</p>
+          <select id="dropdown" name="most-like">
+            <option disabled selected value>Select an option</option>
+            <option value="store-staff">Store staff's attitude, attire and product knowledge</option>
+            <option value="cash-register">Cash register speed</option>
+            <option value="fitting-room">Fitting room assistance</option>
+            <option value="sales-floor">Sales floor attention</option>
+            <option value="stock-items">Stock items</option>
+            <option value="prices">Product prices</option>
+            <option value="return-policy">Store return policy</option>
+            <option value="decor">Store decor and lighting</option>
+          </select>
+        </div>
+    
+        <div class="radio-input">
+          <p>How well does our product meet your needs and expectations?</p>
+          <label><input type="radio" name="product-expectation" value="badly">Badly</label>
+          <label><input type="radio" name="product-expectation" value="fine">Fine</label>
+          <label><input type="radio" name="product-expectation" value="well">Well</label>
+          <label><input type="radio" name="product-expectation" value="very-well">Very Well</label>
+        </div>
+    
+        <div>
+          <p>Please use the space provided for any comments you have regarding your purchased items. <span class="clue">(If possible, please provide the item name)</span></p>
+          <textarea name="message" id="textarea-input" placeholder="Enter your comment here..."></textarea>
+        </div>
+    
+        <div>
+          <button type="submit" id="submit-button">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>    
+</body>
+</html>    
