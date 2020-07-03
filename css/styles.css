@@ -1,0 +1,110 @@
+* { 
+  box-sizing: border-box; 
+}
+
+html {
+	background-image: linear-gradient(90deg, rgba(229,255,204,0.35), rgba(229,255,204,0.4)),
+	  url("../img/store-mannequins-2448x1712.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+  
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .container {width: 100%;}
+}
+  
+#title {
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 2px 2px white;
+}
+
+@media (max-width: 600px) {
+  #title {font-size: 2em;}
+}
+
+#description {
+  font-size: 1.4em;  
+  font-style: italic;
+  font-weight: bold;
+  margin: 5px 15px;
+  text-align: center;  
+  text-shadow: 2px 2px white;  
+}  
+
+@media (max-width: 600px) {
+  #description {font-size: 1.2em;}
+}
+
+#survey-form {
+  background: linear-gradient(rgba(102,102,51,0.9), rgba(102,102,51,0.95));
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;    
+  padding: 40px;    
+}
+
+@media (max-width: 600px) {
+  #survey-form {padding: 20px}
+}
+
+p {
+  margin-bottom: 5px;
+}
+  
+.data-input input,
+.dropdown select {
+  border-radius: 5px;
+  font-size: 0.95em;
+  margin: 3px 0 15px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.radio-input label,
+.checkbox-input label {
+  display: flex;
+  align-items: center;
+}
+
+.radio-input input,
+.checkbox-input input {
+  min-height: 1.5em;
+  min-width: 1.5em;
+  margin-right: 10px;
+}
+
+#submit-button {
+  background: rgb(230,57,0);
+  color: inherit;
+  font-size: inherit;
+  padding: 8px;
+  width: 100%;
+}
+
+#textarea-input {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  min-height: 8em;
+  padding: 8px 10px;
+  resize: vertical;
+  width: 100%; 
+}
+
+.clue {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-left: 3px;
+}
